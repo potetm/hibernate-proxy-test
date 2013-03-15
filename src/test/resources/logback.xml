@@ -1,0 +1,15 @@
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%date %level %logger [%file:%line] %msg%n%ex</pattern>
+		</encoder>
+	</appender>
+
+	<root level="ERROR">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+	<logger name="com.potetm"                                    level="OFF" />
+	<logger name="org.hibernate.SQL"                             level="OFF" />
+	<logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="OFF" />
+</configuration>
